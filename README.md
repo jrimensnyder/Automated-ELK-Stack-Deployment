@@ -5,7 +5,10 @@ Below is the link the link diagram for the virtual secure cloud network.
 
 ![Elk Stack Deployment Network Diagram](https://user-images.githubusercontent.com/75230303/112245192-cd8abe80-8c26-11eb-9ff7-9ad05a68eace.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of this readme may be used to setup only certain pieces of of the Elk stack, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the files listed below may be used to setup only certain pieces of of the Elk stack, such as Filebeat.
+
+![image](https://user-images.githubusercontent.com/75230303/112247423-aafaa480-8c2a-11eb-957e-640a3b5fe603.png)
+
 
 This document contains the following details:
 
