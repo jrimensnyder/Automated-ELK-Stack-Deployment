@@ -7,14 +7,18 @@ Below is the link the link diagram for the virtual secure cloud network.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of this readme may be used to setup only certain pieces of of the Elk stack, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
-
 This document contains the following details:
-- Description of the Topologu
-- Access Policies
-- ELK Configuration
-  - Beats in Use
+
+- Description of the Topology - This section provides a description of the virtual cloud network, its "hardware" (Infrastructure as code), and its security features.
+
+- Access Policies - This section will describe the security access policies for inbound network traffic
+
+- ELK Configuration - This section deccribes how the Elk stack was automatically configured using a series of .yml files.  It will describe:
+
+  - Beats in Use and their functions
+  - How each beat was installed
   - Machines Being Monitored
+  
 - How to Use the Ansible Build
 
 
