@@ -9,6 +9,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 ![image](https://user-images.githubusercontent.com/75230303/112247423-aafaa480-8c2a-11eb-957e-640a3b5fe603.png)
 
+![filebeat_playbook_yml](https://user-images.githubusercontent.com/75230303/112248151-da5de100-8c2b-11eb-93e6-ae3590cb316a.PNG)
 
 This document contains the following details:
 
