@@ -1,11 +1,11 @@
 # Automated-ELK-Stack-Deployment
-Creation of an automated ELK Stack on a virtual, secure cloud network.
+Creation of an automated ELK Stack on a virtual, secure cloud network.  This network was built using Microsoft Azure Cloud Service.
 
 Below is the link the link diagram for the virtual secure cloud network.
 
-https://drive.google.com/file/d/1TgHSt2kgShrNwOie4_4RmWB4Nz08EsRc/view?usp=sharing
+![Elk Stack Deployment Network Diagram](https://user-images.githubusercontent.com/75230303/112245192-cd8abe80-8c26-11eb-9ff7-9ad05a68eace.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of this readme may be used to setup only certain pieces of of the Elk stack, such as Filebeat.
 
   - _TODO: Enter the playbook file._
 
