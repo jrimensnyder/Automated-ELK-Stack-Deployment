@@ -1,22 +1,6 @@
 # Automated-ELK-Stack-Deployment
 Creation of an automated ELK Stack on a virtual, secure cloud network.  This network was built using Microsoft Azure Cloud Service.  The ELK Stack was deployed through the Gitbash Terminal.
 
-Below is the link the link diagram for the virtual secure cloud network.
-
-![Elk Stack Deployment Network Diagram](https://user-images.githubusercontent.com/75230303/112245192-cd8abe80-8c26-11eb-9ff7-9ad05a68eace.png)
-
-The files listed below and located in ELK Stack Deployment Files in this repository generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the files listed below may be used to setup only certain pieces of of the Elk stack, such as Filebeat.
-
-install-elk.yml
-
-filebeat-config.yml
-
-filebeat-playbook.yml
-
-metricbeat-config-yml
-
-metricbeat-playbook.yml
-
 This document contains the following details:
 
 - Description of the Topology - This section provides a description of the virtual cloud network, its "hardware" (Infrastructure as code), and its security features.
@@ -30,6 +14,24 @@ This document contains the following details:
   - Machines Being Monitored
   
 - How to Use the Ansible Build
+
+Below is the link the link diagram for the virtual secure cloud network.
+
+![Elk Stack Deployment Network Diagram](https://user-images.githubusercontent.com/75230303/112245192-cd8abe80-8c26-11eb-9ff7-9ad05a68eace.png)
+
+
+
+The files listed below and located in ELK Stack Deployment Files in this repository generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the files listed below may be used to setup only certain pieces of of the Elk stack, such as Filebeat.
+
+install-elk.yml
+
+filebeat-config.yml
+
+filebeat-playbook.yml
+
+metricbeat-config-yml
+
+metricbeat-playbook.yml
 
 
 ### Description of the Topology
