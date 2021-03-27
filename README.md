@@ -1,5 +1,5 @@
 # Automated-ELK-Stack-Deployment
-Creation of an automated ELK Stack on a virtual, secure cloud network.  This network was built using Microsoft Azure Cloud Service.
+Creation of an automated ELK Stack on a virtual, secure cloud network.  This network was built using Microsoft Azure Cloud Service.  The ELK Stack was deployed through the Gitbash Terminal.
 
 Below is the link the link diagram for the virtual secure cloud network.
 
