@@ -23,7 +23,13 @@ Below is the link the link diagram for the virtual secure cloud network.
 
    ![Elk Stack Deployment Network Diagram](https://user-images.githubusercontent.com/75230303/112245192-cd8abe80-8c26-11eb-9ff7-9ad05a68eace.png)
 
+There are eight major components of the Azure Virtual Cloud Network:
 
+1) Azure Resource Group (the outer box in the diagram) - Microsoft.com defines a resource group as "a container that holds related resources for an azure solution.  The resource group can include all the resources for the solution, or only those resources that you want to manage as a group."  In our azure cloud virtual network the resource group contains all network components,, virtual machines and security configurations required to establish a dabase hosted by three virtual machines, all monitored by an ELK Stack server.
+
+2) Azure Virtual Network (the inner box in the diagram) - This is the cloud network created through the execution of Infrastucture as Code (IaC).  IaC enabled by Azure, allows network architects to build completely function networks on the cloud without the traditional physical hardware.  Instead of purchasing and configuring load balancers, servers, firewalls, etc, we are leveraging software and microsoft servers to create a fully-functional network.
+
+3) The Jumpbox.  4sysops.com defines a jumpbox as a controlled entry point into a network.  In our cloud network, the jumpbox establishes a single point of entry for users to Remote Desktop Protocol (RDP) or Secure Shell (SSH) into the virtual network from the outside through port 22.  Establishing access control through one single machine reduces potential points of entry for an attack.  This increases the security of your network, however, if the jumpbox goes down, you can no longer access the private network.
 
 The files listed below and located in ELK Stack Deployment Files in this repository generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the files listed below may be used to setup only certain pieces of of the Elk stack, such as Filebeat.
 
