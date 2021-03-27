@@ -23,7 +23,7 @@ Below is the link the link diagram for the virtual secure cloud network.
 
    ![Elk Stack Deployment Network Diagram](https://user-images.githubusercontent.com/75230303/112245192-cd8abe80-8c26-11eb-9ff7-9ad05a68eace.png)
 
-There are eight major components of the Azure Virtual Cloud Network:
+There are nine major components or our Azure Virtual Cloud Network:
 
 1) Azure Resource Group (the outer box in the diagram) - Microsoft.com defines a resource group as "a container that holds related resources for an azure solution.  The resource group can include all the resources for the solution, or only those resources that you want to manage as a group."  In our azure cloud virtual network the resource group contains all network components,, virtual machines and security configurations required to establish a dabase hosted by three virtual machines, all monitored by an ELK Stack server.
 
@@ -37,7 +37,13 @@ There are eight major components of the Azure Virtual Cloud Network:
 
 6) Docker VM Web Machines.  These are the virtual machines that host the Database and form the heart of the virtual network. 
 
-7) The ELK-2 Server.  This is the server that monitors the traffic on our network and stores log data.  It is an open source monitoring software.  ELK is an acronym that stands for Elasticsearch, Logstash, Kibana.  
+7) The ELK-2 Server.  This is the server that monitors the traffic on our network and stores log data.  It is an open source monitoring software.  ELK is an acronym that stands for Elasticsearch, Logstash, Kibana.  These are the three components of an ELK Stack. Accoring to the creators website elastic.com, "Elasticsearch is a search and analytic engine that searches and analyzes incoming network traffic.  Logstash is a server-side data processing pipeline that ingests data from multiple sources simultaneously, transforms it, and sends it to a "stash" (in this case Elastic Search) to be evaluated. Kibana is open source software that enalbes users to visualize data with charts and graphs in Elasticsearch.
+
+8) The internet. The internet enables users with proper access the medium to SSH through the jumpbox into our virtual cloud network,  This enables access to the database hosted by our virtual machines.
+
+9) Local workstation.  This is where is all begins.  The local machine access the internet to initiate remote access into the private network.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 The files listed below and located in ELK Stack Deployment Files in this repository generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the files listed below may be used to setup only certain pieces of of the Elk stack, such as Filebeat.
 
