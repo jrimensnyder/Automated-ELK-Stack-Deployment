@@ -56,13 +56,14 @@ There are nine major components or our Azure Virtual Cloud Network:
 
 The configuration details of each machine may be found below.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-
+| Name         | Function              | IP Address    | Operating System |
+|--------------|-----------------------|---------------|------------------|
+| Jumpbox      | Gateway               | 52.177.217.63 | Linux Ubuntu     |
+| ELK-2        | ELK Stack Host        | 10.1.0.5      | Linux Ubuntu     |
+| Web-1        | DVWA Application Host | 10.0.0.9      | Linux Ubuntu     |
+| Web-2        | DVWA Application Host | 10.0.0.10     | Linux Ununtu     |
+| Web-3        | DVWA Application Host | 10.0.0.12     | Linux Ubuntu     |
+| Loadbalancer | Distributes Traffic   | 40.87.99.10   | N/A              |
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
