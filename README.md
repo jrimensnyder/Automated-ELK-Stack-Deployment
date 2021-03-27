@@ -8,9 +8,13 @@ Below is the link the link diagram for the virtual secure cloud network.
 The files listed below and located in ELK Stack Deployment Files in this repository generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the files listed below may be used to setup only certain pieces of of the Elk stack, such as Filebeat.
 
 install-elk.yml
+
 filebeat-config.yml
+
 filebeat-playbook.yml
+
 metricbeat-config-yml
+
 metricbeat-playbook.yml
 
 This document contains the following details:
