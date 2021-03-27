@@ -31,6 +31,14 @@ There are eight major components of the Azure Virtual Cloud Network:
 
 3) The Jumpbox.  4sysops.com defines a jumpbox as a controlled entry point into a network.  In our cloud network, the jumpbox establishes a single point of entry for users to Remote Desktop Protocol (RDP) or Secure Shell (SSH) into the virtual network from the outside through port 22.  Establishing access control through one single machine reduces potential points of entry for an attack.  This increases the security of your network, however, if the jumpbox goes down, you can no longer access the private network.
 
+4) The (Network) Security Group. Microsoft.com defines the security group as a set of common rules to "filter network traffic to and from an Azure virtual network.  We will define these rules below when we discuss the access policies for our network.
+
+5) Network Load Balancer. Aws.amazon.com defines a network load balancer as a piece of hardware or IaC (vurtual load balancer) that "automatically distributes your incoming traffic across multiple targets.  In our network, this allows traffic to flow to another virtual machione hopsting the database if one or more machines goes offline.  For example, iof VM Web-1 and VM Web-2 goes offline, a user can still access the database because the laod balancer will send the request to VM Web-3.  This is possible because all three VN Web machines are linked to the network load balancer by grouping the VMs together in the Load Balancer Backend Pool. (See right side of network diagram)
+
+6) Docker VM Web Machines.  These are the virtual machines that host the Database and form the heart of the virtual network. 
+
+7) The ELK-2 Server.  This is the server that monitors the traffic on our network and stores log data.  It is an open source monitoring software.  ELK is an acronym that stands for Elasticsearch, Logstash, Kibana.  
+
 The files listed below and located in ELK Stack Deployment Files in this repository generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the files listed below may be used to setup only certain pieces of of the Elk stack, such as Filebeat.
 
 install-elk.yml
