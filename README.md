@@ -1,4 +1,5 @@
 # Automated-ELK-Stack-Deployment
+
 Creation of an automated ELK Stack on a virtual, secure cloud network.  This network was built using Microsoft Azure Cloud Service.  The ELK Stack was deployed through the Gitbash Terminal.
 
 This document contains the following details:
@@ -17,7 +18,9 @@ This document contains the following details:
 
 ------------------------------------------------------------------------
 
-TOPOLOGY
+Description of the TOPOLOGY
+
+The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application (Server)
 
 Below is the link the link diagram for the virtual secure cloud network.
 
@@ -33,15 +36,33 @@ There are nine major components or our Azure Virtual Cloud Network:
 
 4) The (Network) Security Group. Microsoft.com defines the security group as a set of common rules to "filter network traffic to and from an Azure virtual network.  We will define these rules below when we discuss the access policies for our network.
 
-5) Network Load Balancer. Aws.amazon.com defines a network load balancer as a piece of hardware or IaC (vurtual load balancer) that "automatically distributes your incoming traffic across multiple targets.  In our network, this allows traffic to flow to another virtual machione hopsting the database if one or more machines goes offline.  For example, iof VM Web-1 and VM Web-2 goes offline, a user can still access the database because the laod balancer will send the request to VM Web-3.  This is possible because all three VN Web machines are linked to the network load balancer by grouping the VMs together in the Load Balancer Backend Pool. (See right side of network diagram)
+5) Network Load Balancer. Aws.amazon.com defines a network load balancer as a piece of hardware or IaC (vurtual load balancer) that "automatically distributes your incoming traffic across multiple targets.  In our network, this allows traffic to flow to another virtual machione hopsting the database if one or more machines goes offline.  For example, iof VM Web-1 and VM Web-2 goes offline, a user can still access the database because the laod balancer will send the request to VM Web-3.  This is possible because all three VN Web machines are linked to the network load balancer by grouping the VMs together in the Load Balancer Backend Pool. (See right side of network diagram).  Load balancing ensures that the application will be highly accessible, in addition to restricting unauthorized access to the network through the security group firewall.
 
 6) Docker VM Web Machines.  These are the virtual machines that host the Database and form the heart of the virtual network. 
 
-7) The ELK-2 Server.  This is the server that monitors the traffic on our network and stores log data.  It is an open source monitoring software.  ELK is an acronym that stands for Elasticsearch, Logstash, Kibana.  These are the three components of an ELK Stack. Accoring to the creators website elastic.com, "Elasticsearch is a search and analytic engine that searches and analyzes incoming network traffic.  Logstash is a server-side data processing pipeline that ingests data from multiple sources simultaneously, transforms it, and sends it to a "stash" (in this case Elastic Search) to be evaluated. Kibana is open source software that enalbes users to visualize data with charts and graphs in Elasticsearch.
+7) The ELK-2 Server.  This is the server that monitors the traffic on our network and stores log data.  It is an open source monitoring software.  ELK is an acronym that stands for Elasticsearch, Logstash, Kibana.  These are the three components of an ELK Stack. Accoring to the creators website elastic.com, "Elasticsearch is a search and analytic engine that searches and analyzes incoming network traffic.  Logstash is a server-side data processing pipeline that ingests data from multiple sources simultaneously, transforms it, and sends it to a "stash" (in this case Elastic Search) to be evaluated. Kibana is open source software that enalbes users to visualize data with charts and graphs in Elasticsearch.  Integrating an ELK server allows us to easily monitor the vulnerable VMs for changes to the files and system configurations.
+
+      - Two Monitoring services installed on our ELK Server:
+      
+          1 - filebeat - Elastic.co defines filebeat as lightweight software that forwards and centralizes log data.  It is installed on the elk server to monitor user specified log siles or locations, collecting log events and forwarding them to Elasticsearch or Logtash for indexing.  The bottom line is filebeat looks for user defined changes to the system or its files/
+
+          2 - metricbeat - Elastic.com defines metricbeat as lighweight software "you can install on servers tp periodically collect metric from the operating system and from services running on the server.  Metricbeat takes the metrics and statistics that it collects and ships them to the output you specify."  In our case the metrics and statistics are sent to Elasticsearch and logstash.
 
 8) The internet. The internet enables users with proper access the medium to SSH through the jumpbox into our virtual cloud network,  This enables access to the database hosted by our virtual machines.
 
 9) Local workstation.  This is where is all begins.  The local machine access the internet to initiate remote access into the private network.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The configuration details of each machine may be found below.
+
+| Name     | Function | IP Address | Operating System |
+|----------|----------|------------|------------------|
+| Jump Box | Gateway  | 10.0.0.1   | Linux            |
+| TODO     |          |            |                  |
+| TODO     |          |            |                  |
+| TODO     |          |            |                  |
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -57,17 +78,6 @@ metricbeat-config-yml
 
 metricbeat-playbook.yml
 
-
-### Description of the Topology
-
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
-
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
-
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
