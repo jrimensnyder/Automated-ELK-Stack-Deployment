@@ -21,7 +21,7 @@ TOPOLOGY
 
 Below is the link the link diagram for the virtual secure cloud network.
 
-![Elk Stack Deployment Network Diagram](https://user-images.githubusercontent.com/75230303/112245192-cd8abe80-8c26-11eb-9ff7-9ad05a68eace.png)
+            ![Elk Stack Deployment Network Diagram](https://user-images.githubusercontent.com/75230303/112245192-cd8abe80-8c26-11eb-9ff7-9ad05a68eace.png)
 
 
 
