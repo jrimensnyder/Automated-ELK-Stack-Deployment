@@ -181,6 +181,12 @@ Below is a screen capture of the gitbash terminal when you run the install-elk.y
 
 ![Install Elk YAML File](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Install%20ELK%20YAML%20File%20through%20Bash.PNG)
 
-Bwlow is a screen capture of the bitbash terminal when you run the filebeat-playbook.yml.
+Below is a screen capture of the gitbash terminal when you run the filebeat-playbook.yml.
 
 ![Install Filebeat YAML File in Bash](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Install%20Filebeat-Playbook-yml%20through%20Bash.PNG)
+
+Below is a screen capture of the gitbash terminal when you run the metricbeat-playboon.yml.
+
+1[Install Metricbeat YAML File in Bash](
+
+
