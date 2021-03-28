@@ -42,6 +42,10 @@ There are nine major components or our Azure Virtual Cloud Network:
 
 7) The ELK-2 Server.  This is the server that monitors the traffic on our network and stores log data.  It is an open source monitoring software.  ELK is an acronym that stands for Elasticsearch, Logstash, Kibana.  These are the three components of an ELK Stack. Accoring to the creators website elastic.com, "Elasticsearch is a search and analytic engine that searches and analyzes incoming network traffic.  Logstash is a server-side data processing pipeline that ingests data from multiple sources simultaneously, transforms it, and sends it to a "stash" (in this case Elastic Search) to be evaluated. Kibana is open source software that enalbes users to visualize data with charts and graphs in Elasticsearch.  Integrating an ELK server allows us to easily monitor the vulnerable VMs for changes to the files and system configurations.
 
+Below is a simple ELK Stack Diagram that illustrates the flow of log data from the Web Virtual Machines through the stack.
+
+
+
       - Two Monitoring services installed on our ELK Server:
       
           1 - filebeat - Elastic.co defines filebeat as lightweight software that forwards and centralizes log data.  It is installed on the elk server to monitor user specified log siles or locations, collecting log events and forwarding them to Elasticsearch or Logtash for indexing.  The bottom line is filebeat looks for user defined changes to the system or its files/
