@@ -6,6 +6,8 @@ This document contains the following details:
 
 - Description of the Topology - This section provides a description of the virtual cloud network, its "hardware" (Infrastructure as code), and its security features.
 
+- Jumpbox configuration and use of ansible docker container to provision virtual machine hosting the DVWA Web APP.
+
 - Access Policies - This section will describe the security access policies for inbound network traffic
 
 - ELK Configuration - This section deccribes how the Elk stack was automatically configured using a series of .yml files.  It will describe:
@@ -178,3 +180,5 @@ This YAML playbook installs metricbeat to the virtual machines.  Metricbeat, as 
 Below is a screen capture of the gitbash terminal when you run the install-elk.yml playbook.
 
 ![Install Elk YAML File](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Install%20ELK%20YAML%20File%20through%20Bash.PNG)
+
+
