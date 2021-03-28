@@ -222,7 +222,10 @@ In this log the analyst noticed a failed system.auth.ssh.event from IP 10.0.0.4 
 
 Someone also attempted to ssh into Web-3 using the invalid username jrimensnyder.  See below.  Notice that all of these attempts happened within one minute of eachother.
 
-1[Web-3 Failed SSH Attempt](
+![Web-3 Failed SSH Attempt](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Web-3%20failed%20SSH%20Attempt%20from%20jrimensyder.PNG)
+
+The SOC analyst was curious why she didn't didn't notice any attempts to access the ELK server but then remebered that stack only monitored the web machines.
+
 
 Generate a high amount of CPU usage on the web machines and verify that Kibana picks up this data.
 
