@@ -18,7 +18,7 @@ This document contains the following details:
 
 ------------------------------------------------------------------------
 
-Description of the TOPOLOGY
+## Description of the TOPOLOGY
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application (Server)
 
@@ -58,6 +58,8 @@ Below is a simple ELK Stack Diagram that illustrates the flow of log data from t
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+## Virtual Machine Configuration
+
 The configuration details of each machine may be found below.
 
 | Name         | Function              | IP Address    | Operating System |
@@ -70,6 +72,35 @@ The configuration details of each machine may be found below.
 | Loadbalancer | Distributes Traffic   | 40.87.99.10   | N/A              |
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Access Policies
+
+The machines on the internal network are not exposed to the public Internet. 
+
+Only the jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- 100.15.241.202 - Public IP address of my (James Rimensnyder's Desktop Computer) - The firewall allows SSH access (port 22) from this IP address and HTTP traffic (port 80).
+- 10.0.0.9 - Public IP address of Web-1 VM
+- 10.0.0.10 - Public IP address of Web-2 VM
+- 10.0.0.12 - Public IP Address of Web-3 VM
+
+Below is a screen shot of the Security Group for the VM network.
+
+![Security Group Rimy](
+
+
+Machines within the network can only be accessed by _____.
+- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+
+A summary of the access policies in place can be found in the table below.
+
+| Name     | Publicly Accessible | Allowed IP Addresses |
+|----------|---------------------|----------------------|
+| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
+|          |                     |                      |
+|          |                     |                      |
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 AUTOMATED DEPLOYMENT of the ELK STACK
 
@@ -86,33 +117,7 @@ metricbeat-config-yml
 metricbeat-playbook.yml
 
 
-The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-
-### Access Policies
-
-The machines on the internal network are not exposed to the public Internet. 
-
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
-
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
-
-A summary of the access policies in place can be found in the table below.
-
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
 
 ### Elk Configuration
 
