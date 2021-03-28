@@ -109,7 +109,7 @@ Machines within the network can only be accessed by the ansible docker risiding 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-AUTOMATED DEPLOYMENT of the ELK STACK
+## AUTOMATED DEPLOYMENT of the ELK STACK
 
 The files listed below and located in ELK Stack Deployment Files in this repository generate a live ELK deployment configuration on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the files listed below may be used to setup only certain pieces of of the Elk stack, such as Filebeat.  These files are located in the Elk Stack Deployment Folder at the top of the github repository.
 
@@ -158,6 +158,12 @@ This playbook executes the following:
     - It placed the drops the filebeat configuration file into the approriate /etc/ file on the virtual machines.
     - It enables and configures the filebeat module and sets up the filebeat service
     - and finally, it starts the service
+
+metricbeat-playbook.yml
+
+This YAML playbook installs metricbeat to the virtual machines.  Metricbeat, as explined above, is software you can install on servers tp periodically collect metric from the operating system and from services running on the server.
+
+
 
 
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation
