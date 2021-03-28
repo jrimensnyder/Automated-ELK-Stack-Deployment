@@ -85,7 +85,7 @@ Only the jumpbox machine can accept connections from the Internet. Access to thi
 
 Below is a screen shot of the Security Group for the VM network.
 
-![Security Group Rimy](
+![Security Group Rimy](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Security%20Group%20Rimy.PNG)
 
 
 Machines within the network can only be accessed by _____.
