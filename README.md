@@ -178,7 +178,7 @@ This YAML playbook installs metricbeat to the virtual machines.  Metricbeat, as 
     - and finally, it starts the service 
 
 Below is a screen capture of the gitbash terminal when you run the install-elk.yml playbook.  Notice that the YAML file only uploads the container and associated files
-on the Elk-2 machine with a private IP address of 10.1.0.5.  This is because the YAML file only targets IP addresses under the ELK hosts.  Please see the Ansible Host File in the Elk Stack files for more details.
+on the Elk-2 machine with a private IP address of 10.1.0.5.  This is because the YAML file only targets IP addresses under the ELK hosts.  Please see the Ansible Host File in the Jumpbox ansible files for more details.
 
 ![Install Elk YAML File](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Install%20ELK%20YAML%20File%20through%20Bash.PNG)
 
