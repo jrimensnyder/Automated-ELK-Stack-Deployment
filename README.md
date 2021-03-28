@@ -79,26 +79,23 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - 100.15.241.202 - Public IP address of my (James Rimensnyder's Desktop Computer) - The firewall allows SSH access (port 22) from this IP address and HTTP traffic (port 80).
-- 10.0.0.9 - Public IP address of Web-1 VM
-- 10.0.0.10 - Public IP address of Web-2 VM
-- 10.0.0.12 - Public IP Address of Web-3 VM
+
+| Names   | Public Accessible | Allowed IP Address                                       |
+|---------|-------------------|----------------------------------------------------------|
+| Jumpbox | Yes               | 100.15.241.202, 10.1.0.5, 10.0.0.9, 10.0.0.10, 10.0.0.12 |
+| ELK-2   | No                | 10.0.0.4, 10.0.0.9, 10.0.0.10, 10.0.0.12                 |
+| Web-1   | No                | 10.0.0.4, 10.1.0.5, 10.0.0.9, 10.0.0.10, 10.0.0.12       |
+| Web-2   | No                | 10.0.0.4, 10.1.0.5, 10.0.0.9, 10.0.0.10, 10.0.0.12       |
+| Web-3   | No                | 10.0.0.4, 10.1.0.5, 10.0.0.9, 10.0.0.10, 10.0.0.12       |
 
 Below is a screen shot of the Security Group for the VM network.
 
 ![Security Group Rimy](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Security%20Group%20Rimy.PNG)
 
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by the ansible docker risiding on the Jumpbox VM.
 
-A summary of the access policies in place can be found in the table below.
-
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
-
+-The ELK-2 VM can only be accessed by the ansible docker on the Jumpbox VM.  It is accessed through the jumpbox public IP address 10.0.0.4.  This is accomplished through the ansible docker condescending_napier located on the Jumpbox VM.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
