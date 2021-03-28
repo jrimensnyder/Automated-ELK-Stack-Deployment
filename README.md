@@ -92,7 +92,13 @@ IMPORTANT NOTE - All access rules are inbound rules.  The chart below represents
 | Web-2   | No                | (SSH) 10.0.0.4, (HTTP) 10.1.0.5, 10.0.0.9, 10.0.0.10, 10.0.0.12       |
 | Web-3   | No                | (SSH) 10.0.0.4, (HTTP) 10.1.0.5, 10.0.0.9, 10.0.0.10, 10.0.0.12       |
 
-Below is a screen shot of the Security Group for the VM network.
+Below is a screen shot of the Security Group for the VM network.  This Azure Network Security Group (Security_Group_Rimy) has four key rules that generate the access configurations listed above.
+
+Rule #1 - Port 80 - This rule establishes HTTP access from my personal desktop IP 100.15.241.202 to the virtual network.  This includes the Jumpbox, ELK-2, Web-1, Web-2, amnd Web-3.
+
+Rule #2 - Elk-SSH - This rule allows SSH (port 22) access from the Jumpbox's public IP address (10.0.0.4) to ELK-2
+
+Rule #3 - SSH-from-Jump - This rule allows access through port 22 from the Jumpbox to the the virtual machines.
 
 ![Security Group Rimy](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Security%20Group%20Rimy.PNG)
 
