@@ -147,6 +147,12 @@ This YAML playbook installs a docker container on the ELK-2 Virtual Machine.  Be
 
     - Downloads, launches and enables on boot a docker elk container.  This is the docker container that houses the log server and management 
       web interface consisting of Elasticsearch, Logstash, and Kibana.
+      
+When the install-elk.yml is executed through gitbash on the local machine it will look like this:
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 filebeat-playbook.yml
 
@@ -155,15 +161,16 @@ This playbook executes the following:
 
     - It downloads the filebeat debian file from the artifacts.elastic.co website using curl (its a GET of the debian file)
     - It installs the filebeat debian file on the elk server and virtual machines (Web-1,2,3)
-    - It placed the drops the filebeat configuration file into the approriate /etc/ file on the virtual machines.
+    - It drops the filebeat configuration file into the approriate /etc/ file on the virtual machines.
     - It enables and configures the filebeat module and sets up the filebeat service
     - and finally, it starts the service
 
 metricbeat-playbook.yml
 
-This YAML playbook installs metricbeat to the virtual machines.  Metricbeat, as explined above, is software you can install on servers tp periodically collect metric from the operating system and from services running on the server.
+This YAML playbook installs metricbeat to the virtual machines.  Metricbeat, as explined above, is software you can install on servers tp periodically collect metric from the operating system and from services running on the server.  The YAML file executes the following tasks:
 
-
-
-
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation
+    - It downloads the metric debian file from the artifacts.elastic.co website using curl (its a GET of the debian file)
+    - It installs the metricbeat debian file on the elk server and virtual machines (Web-1,2,3)
+    - It drops the mertricbeat configuration file into the approriate /etc/ file on the virtual machines.
+    - It enables and configures the metricbeat module and sets up the metricbeat service
+    - and finally, it starts the service 
