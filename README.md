@@ -208,10 +208,10 @@ This first image from Kibana shows a spike in network activity on the network ao
 
 ![Spike in Network Activity](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Spike%20in%20Network%20Activity.PNG)
 
-The SOC analyst conducted a review of the log data and located the below failed SSH attemps to Web-1, 2, 3.
+The SOC analyst conducted a review of the log data and located the below failed SSH attemps to Web-1, 2, 3.  
 
-
-
+![Web-1 Failed SSH Attemp](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Web-1%20Failed%20SSH%20Attempt%20from%20jrimens.PNG)
+In this log the analyst noticed that there was a failed system.auth.ssh.event from IP 10.0.0.4 (Jumpbox IP) using the invalid username jrimens.
 
 Generate a high amount of CPU usage on the pen-testing machines and verify that Kibana picks up this data.
 
