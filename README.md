@@ -174,3 +174,7 @@ This YAML playbook installs metricbeat to the virtual machines.  Metricbeat, as 
     - It drops the mertricbeat configuration file into the approriate /etc/ file on the virtual machines.
     - It enables and configures the metricbeat module and sets up the metricbeat service
     - and finally, it starts the service 
+
+Below is a screen capture of the gitbash terminal when you run the install-elk.yml playbook.
+
+![Install Elk YAML File](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Install%20ELK%20YAML%20File%20through%20Bash.PNG)
