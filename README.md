@@ -125,6 +125,7 @@ metricbeat-config.yml
 
 metricbeat-playbook.yml
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Elk Configuration
 
@@ -150,9 +151,10 @@ This YAML playbook installs a docker container on the ELK-2 Virtual Machine.  Be
     - Downloads, launches and enables on boot a docker elk container.  This is the docker container that houses the log server and management 
       web interface consisting of Elasticsearch, Logstash, and Kibana.
       
-When the install-elk.yml is executed through gitbash on the local machine it will look like this:
+Below is a screen capture of the gitbash terminal when you run the install-elk.yml playbook.  Notice that the YAML file only uploads the container and associated files
+on the Elk-2 machine with a private IP address of 10.1.0.5.  This is because the YAML file only targets IP addresses under the ELK hosts.  Please see the Ansible Host File in the Jumpbox ansible files for more details.
 
-
+![Install Elk YAML File](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Install%20ELK%20YAML%20File%20through%20Bash.PNG)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -167,6 +169,12 @@ This playbook executes the following:
     - It enables and configures the filebeat module and sets up the filebeat service
     - and finally, it starts the service
 
+Below is a screen capture of the gitbash terminal when you run the filebeat-playbook.yml.
+
+![Install Filebeat YAML File in Bash](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Install%20Filebeat-Playbook-yml%20through%20Bash.PNG)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 metricbeat-playbook.yml
 
 This YAML playbook installs metricbeat to the virtual machines.  Metricbeat, as explined above, is software you can install on servers tp periodically collect metric from the operating system and from services running on the server.  The YAML file executes the following tasks:
@@ -177,17 +185,8 @@ This YAML playbook installs metricbeat to the virtual machines.  Metricbeat, as 
     - It enables and configures the metricbeat module and sets up the metricbeat service
     - and finally, it starts the service 
 
-Below is a screen capture of the gitbash terminal when you run the install-elk.yml playbook.  Notice that the YAML file only uploads the container and associated files
-on the Elk-2 machine with a private IP address of 10.1.0.5.  This is because the YAML file only targets IP addresses under the ELK hosts.  Please see the Ansible Host File in the Jumpbox ansible files for more details.
-
-![Install Elk YAML File](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Install%20ELK%20YAML%20File%20through%20Bash.PNG)
-
-Below is a screen capture of the gitbash terminal when you run the filebeat-playbook.yml.
-
-![Install Filebeat YAML File in Bash](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Install%20Filebeat-Playbook-yml%20through%20Bash.PNG)
-
 Below is a screen capture of the gitbash terminal when you run the metricbeat-playboon.yml.  Note, with both the filebeat and metricbeat YAMLs, the files are uploaded to IPs 10.0.0.9, 10.0.0.10, 10.0.0.12.  These IPs are the three web machines that host our web app.  This is because the YAML file only targets the IP address under the host file.
 
 ![Install Metricbeat YAML File in Bash](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Install%20Metricbeat%20YAML%20through%20Bash.PNG)
 
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
