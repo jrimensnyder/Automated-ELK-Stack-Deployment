@@ -132,5 +132,74 @@ Ansible is a simple information technology "automation engine that automates clo
 
 Our ELK Deployment was accomplished using five YAML programs or playbooks.  A description of each program is provided below.
 
+Install-Elk.yml
+
+This YAML playbook installs a docker container on the ELK-2 Virtual Machine.  Below are the tasks completed by the Install-Elk.yml.
+
+    - Installs docker.io - this is the container platform that will be used to house the software programs used by
+      the VM to operate the ELK stack.
+      
+    - Installs python3-pip.  This is a package management system written in python programming language used to install 
+      and manage software packages. It connects the virtual machine to an online repository for public and paid for 
+      private software packages.
+
+    - Installs Doocker module.  Docker module retrieves metrics from docker containers  
+
+    - Downloads, launches and enables on boot a docker elk container.  This is the docker container that houses the log server and management 
+      web interface consisting of Elasticsearch, Logstash, and Kibana.
+
+
+---
+
+- name: Configure Elk VM with Docker
+  hosts: elk
+  remote_user: jrimen
+  become: true
+  tasks:
+
+    - name: Install docker.io
+      apt:
+        update_cache: yes
+        force_apt_get: yes
+        name: docker.io
+        state: present
+
+    - name: Install python3-pip
+      apt:
+        force_apt_get: yes
+        name: python3-pip
+        state: present
+
+    - name: Install Docker module
+      pip:
+        name: docker
+        state: present
+
+    - name: Increase virtual memory
+      command: sysctl -w vm.max_map_count=262144
+
+    - name: Use more memory
+      sysctl:
+        name: vm.max_map_count
+        value: '262144'
+        state: present
+        reload: yes
+
+    - name: download and launch a docker elk container
+      docker_container:
+        name: elk
+        image: sebp/elk:761
+        state: started
+        restart_policy: always
+        published_ports:
+          - 5601:5601
+          - 9200:9200
+          - 5044:5044
+
+    - name: Enable service docker on boot
+      systemd:
+        name: docker
+        enabled: yes
+
 
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation
