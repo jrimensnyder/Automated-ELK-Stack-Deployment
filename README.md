@@ -24,7 +24,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Below is the link the link diagram for the virtual secure cloud network.
 
-![Elk Stack Deployment Network Diagram]()
+![Elk Stack Deployment Network Diagram](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Elk%20Stack%20Deployment%20Network%20Diagram.png)
 
 There are nine major components or our Azure Virtual Cloud Network:
 
