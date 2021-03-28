@@ -204,9 +204,11 @@ First, I will attempt to ssh into the web machines and the elk server using a va
 
 Now lets see what failed ssh activty the ELK stack detected.  See the below log data taken from Kibana.
 
-This first image from Kibana shows a spike in network activity on the network aorund 18:15:00.  A Security Operations Center analyst monitoring our network noticed the spike in activity and decided to investigate.  
+This first image from Kibana shows a spike in network activity on the network aorund 18:15:00.  A Security Operations Center analyst monitoring our network noticed the spike in activity on the far right of the graph and decided to investigate.  
 
 ![Spike in Network Activity](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Spike%20in%20Network%20Activity.PNG)
+
+The SOC analyst conducted a review of the log data and located the below failed SSH attemps to Web-1, 2, 3.
 
 
 
