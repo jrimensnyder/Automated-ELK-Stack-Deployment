@@ -187,6 +187,6 @@ Below is a screen capture of the gitbash terminal when you run the filebeat-play
 
 Below is a screen capture of the gitbash terminal when you run the metricbeat-playboon.yml.
 
-1[Install Metricbeat YAML File in Bash](
+1[Install Metricbeat YAML File in Bash](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Install%20Metricbeat%20YAML%20through%20Bash.PNG)
 
 
