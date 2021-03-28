@@ -44,7 +44,7 @@ There are nine major components or our Azure Virtual Cloud Network:
 
 Below is a simple ELK Stack Diagram that illustrates the flow of log data from the Web Virtual Machines through the stack.
 
-
+https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/ELK%20Stack%20Flow%20Diagram.png
 
       - Two Monitoring services installed on our ELK Server:
       
