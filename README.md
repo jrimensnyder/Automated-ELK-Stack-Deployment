@@ -153,7 +153,11 @@ filebeat-playbook.yml
 This YAML Playbook installs filebeat. As discussed above, filebeat is software that forwards and centralizes log data specified by the user.  
 This playbook executes the following:
 
-    - 
+    - It downloads the filebeat debian file from the artifacts.elastic.co website using curl (its a GET of the debian file)
+    - It installs the filebeat debian file on the elk server and virtual machines (Web-1,2,3)
+    - It placed the drops the filebeat configuration file into the approriate /etc/ file on the virtual machines.
+    - It enables and configures the filebeat module and sets up the filebeat service
+    - and finally, it starts the service
 
 
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation
