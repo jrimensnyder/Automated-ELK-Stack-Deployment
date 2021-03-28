@@ -24,7 +24,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Below is the link the link diagram for the virtual secure cloud network.
 
-![Elk Stack Flow Diagram](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/ELK%20Stack%20Flow%20Diagram.png)
+![Elk Stack Deployment Network Diagram]()
 
 There are nine major components or our Azure Virtual Cloud Network:
 
@@ -44,7 +44,7 @@ There are nine major components or our Azure Virtual Cloud Network:
 
 Below is a simple ELK Stack Diagram that illustrates the flow of log data from the Web Virtual Machines through the stack.
 
-![ELK Stack Flow Diagram](https://user-images.githubusercontent.com/75230303/112754611-dc68cc80-8faa-11eb-92fd-3e3420e23e0f.png) 
+![Elk Stack Flow Diagram](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/ELK%20Stack%20Flow%20Diagram.png) 
 
       - Two Monitoring services installed on our ELK Server:
       
