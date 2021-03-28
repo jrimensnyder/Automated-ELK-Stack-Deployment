@@ -196,7 +196,7 @@ Below is a screen capture of the gitbash terminal when you run the metricbeat-pl
 We need to vertify the ELK server is working as expected and pulling both logs and metrics from the web servers hosting the DVWA app (Web-1,2,3).
 We will accomplish this by running three tests.
 
-Test # 1 - Generate a high amount of failed SSH login attempts from the jumpbox ansible docker to the web servers and verify that Kibana is picking up this activity.
+## Test # 1 - Generate a high amount of failed SSH login attempts from the jumpbox ansible docker to the web servers and verify that Kibana is picking up this activity.
 
 First, I will attempt to ssh into the web machines and the elk server using a vairety of incorrect usernames.  Below is a screenshot of the gitbash commands.
 
@@ -226,8 +226,12 @@ Someone also attempted to ssh into Web-3 using the invalid username jrimensnyder
 
 The SOC analyst was curious why she didn't didn't notice any attempts to access the ELK server but then remebered that stack only monitored the web machines.
 
+IT IS VERIFIED.  THE ELK STACK IS LOGGING DATA!
 
-Generate a high amount of CPU usage on the web machines and verify that Kibana picks up this data.
+
+## Test #2 - Generate a high amount of CPU usage on the web machines and verify that Kibana picks up this data.
+
+First, lets look at what our CPU usage over the past 15 minutes by filtering metricbeat monitoring by system.cpu.total.norm.pct: Descending
 
 
 Generate a high amount of web requests to your pen-testing servers and make sure that Kibana is picking them up.
