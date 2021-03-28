@@ -80,13 +80,17 @@ The machines on the internal network are not exposed to the public Internet.
 Only the jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - 100.15.241.202 - Public IP address of my (James Rimensnyder's Desktop Computer) - The firewall allows SSH access (port 22) from this IP address and HTTP traffic (port 80).
 
-| Names   | Public Accessible | Allowed IP Address                                       |
-|---------|-------------------|----------------------------------------------------------|
-| Jumpbox | Yes               | 100.15.241.202, 10.1.0.5, 10.0.0.9, 10.0.0.10, 10.0.0.12 |
-| ELK-2   | No                | 10.0.0.4, 10.0.0.9, 10.0.0.10, 10.0.0.12                 |
-| Web-1   | No                | 10.0.0.4, 10.1.0.5, 10.0.0.9, 10.0.0.10, 10.0.0.12       |
-| Web-2   | No                | 10.0.0.4, 10.1.0.5, 10.0.0.9, 10.0.0.10, 10.0.0.12       |
-| Web-3   | No                | 10.0.0.4, 10.1.0.5, 10.0.0.9, 10.0.0.10, 10.0.0.12       |
+IMPORTANT NOTE - All access rules are inbound rules.  The chart below represents which machines can be accessed port 80 (HTTP) and which can be accessed through port 22 (SSH).
+
+- Once Again - Only the Jumpbox can be accessed via port 22 from IP 100.15.241.202
+
+| Names   | Public Accessible | Allowed IP Address                                                    |
+|---------|-------------------|-----------------------------------------------------------------------|
+| Jumpbox | Yes               | (SSH) 100.15.241.202, (HTTP) 10.1.0.5, 10.0.0.9, 10.0.0.10, 10.0.0.12 |
+| ELK-2   | No                | (SSH) 10.0.0.4, (HTTP)10.0.0.9, 10.0.0.10, 10.0.0.12                  |
+| Web-1   | No                | (SSH) 10.0.0.4, (HTTP) 10.1.0.5, 10.0.0.9, 10.0.0.10, 10.0.0.12       |
+| Web-2   | No                | (SSH) 10.0.0.4, (HTTP) 10.1.0.5, 10.0.0.9, 10.0.0.10, 10.0.0.12       |
+| Web-3   | No                | (SSH) 10.0.0.4, (HTTP) 10.1.0.5, 10.0.0.9, 10.0.0.10, 10.0.0.12       |
 
 Below is a screen shot of the Security Group for the VM network.
 
