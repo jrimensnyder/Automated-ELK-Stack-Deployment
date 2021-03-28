@@ -216,9 +216,13 @@ In this log the analyst noticed that there was a failed system.auth.ssh.event fr
 
 Continuing the review, the SOC analyst noticed someone also attempted to ssh into Web-2 using an invalid username.  See log below.
 
-![Web-3 Failed SSH Attempt](
+![Web-2 Failed SSH Attempt](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Web-2%20Failed%20SSH%20Attempt%20from%20jrimensn.PNG)
 
-Generate a high amount of CPU usage on the pen-testing machines and verify that Kibana picks up this data.
+In this log the analyst noticed a failed system.auth.ssh.event from IP 10.0.0.4 using the invlaid username jrimensn
+
+1[Web-3 Failed SSH Attempt]
+
+Generate a high amount of CPU usage on the web machines and verify that Kibana picks up this data.
 
 
 Generate a high amount of web requests to your pen-testing servers and make sure that Kibana is picking them up.
