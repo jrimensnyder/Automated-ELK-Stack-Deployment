@@ -71,6 +71,8 @@ The configuration details of each machine may be found below.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+AUTOMATED DEPLOYMENT of the ELK STACK
+
 The files listed below and located in ELK Stack Deployment Files in this repository generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the files listed below may be used to setup only certain pieces of of the Elk stack, such as Filebeat.
 
 install-elk.yml
