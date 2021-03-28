@@ -111,7 +111,7 @@ Machines within the network can only be accessed by the ansible docker risiding 
 
 AUTOMATED DEPLOYMENT of the ELK STACK
 
-The files listed below and located in ELK Stack Deployment Files in this repository generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the files listed below may be used to setup only certain pieces of of the Elk stack, such as Filebeat.
+The files listed below and located in ELK Stack Deployment Files in this repository generate a live ELK deployment configuration on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the files listed below may be used to setup only certain pieces of of the Elk stack, such as Filebeat.  These files are located in the Elk Stack Deployment Folder at the top of the github repository.
 
 install-elk.yml
 
@@ -119,17 +119,18 @@ filebeat-config.yml
 
 filebeat-playbook.yml
 
-metricbeat-config-yml
+metricbeat-config.yml
 
 metricbeat-playbook.yml
 
 
-
-
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it enables clourd engineers to quickly buld virtual networks using the principle of Infratructure as Code (IaC)
 
-The playbook implements the following tasks:
+Ansible is a simple information technology "automation engine that automates cloud provisioning, configuration, management" and relationships between network nodes. (ansible.com).  Ansible uses the simple programming langauge YAML Ain't Markup Language (YAML).  This language is used to make simple programs called Ansible Playbooks that will configure virtual machines.
+
+Our ELK Deployment was accomplished using five YAML programs or playbooks.  A description of each program is provided below.
+
+
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation
