@@ -200,7 +200,7 @@ Test # 1 - Generate a high amount of failed SSH login attempts from the jumpbox 
 
 First, I will attempt to ssh into the web machines and the elk server using a vairety of incorrect usernames.  Below is a screenshot of the gitbash commands.
 
-
+![Failed SSH Attempts to Webservers](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/GItbash%20Failed%20SSH%20Attempts.PNG)
 
 
 Generate a high amount of CPU usage on the pen-testing machines and verify that Kibana picks up this data.
