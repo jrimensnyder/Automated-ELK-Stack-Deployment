@@ -245,7 +245,7 @@ Now that the stress test is running on Web-1, lets see what CPU usage the ELK St
 
 Web-1 is being overworked and we know the ELK stack is properly monitoring CPU usage.  Lets shut down the stress test and see if CPU usage returns to normal.  Yay, it does!  Within one minute Web-1 returned to 0.6% usage.  See below.
 
-1[Web-1 CPU Usage After Stress Test](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Web-1%20CPU%20Usage%20After%20Stress.PNG)
+![Web-1 CPU Usage After Stress Test](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Web-1%20CPU%20Usage%20After%20Stress.PNG)
 
 
 ## Test #3 - Generate a high amount of web requests to your web machine servers and make sure that Kibana is picking them up.
