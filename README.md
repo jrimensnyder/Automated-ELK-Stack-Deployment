@@ -231,7 +231,9 @@ IT IS VERIFIED.  THE ELK STACK IS LOGGING DATA!
 
 ## Test #2 - Generate a high amount of CPU usage on the web machines and verify that Kibana picks up this data.
 
-First, lets look at what our CPU usage over the past 15 minutes by filtering metricbeat monitoring by system.cpu.total.norm.pct: Descending
+First, lets look at what our CPU usage over the past 15 minutes by the Metricbeat OVerview ECS Dashboard on Kibana. The image below is the normal usage over the past 15 minutes.
+
+
 
 
 Generate a high amount of web requests to your pen-testing servers and make sure that Kibana is picking them up.
