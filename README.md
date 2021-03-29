@@ -231,9 +231,13 @@ IT IS VERIFIED.  THE ELK STACK IS LOGGING DATA!
 
 ## Test #2 - Generate a high amount of CPU usage on the web machines and verify that Kibana picks up this data.
 
-First, lets look at what our CPU usage over the past 15 minutes by the Metricbeat OVerview ECS Dashboard on Kibana. The image below is the normal usage over the past 15 minutes.
+First, lets look at what our CPU usage over the past 15 minutes by the Metricbeat OVerview ECS Dashboard on Kibana. The image below is the normal usage over the past 15 minutes.  CPU usage for Web-1 is 0.6%.
 
+![Web-1 Before Stress Test](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Web-1%20CPU%20Usage%20before%20Stress%20Test.PNG)
 
+Now, lets run a stress test on the Web-1 VM to see if the ELK stack monitors the spike in CPU usage.  We will use the gitbash terminal to execute the stress test.  See below screenshot of the gitbash commands.
+
+1[Gitbash Script of Stress Test]
 
 
 Generate a high amount of web requests to your pen-testing servers and make sure that Kibana is picking them up.
