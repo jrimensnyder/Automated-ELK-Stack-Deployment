@@ -16,7 +16,7 @@ This document contains the following details:
   - How each beat was installed
   - Machines Being Monitored
   
-- How to Use the Ansible Build - I will conduct an investigation into traffic on our virtual network through our ELK Stack Server containing Elasticsearch Logstash, and Kibana.
+- How to Use the Ansible Build - We will conduct an investigation into traffic on our virtual network through our ELK Stack Server containing Elasticsearch Logstash, and Kibana.  The purpose of this investigation to validate that our ELK Stack monitoring system is working properly.
 
 ------------------------------------------------------------------------
 
