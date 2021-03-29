@@ -250,6 +250,13 @@ Web-1 is being overworked and we know the ELK stack is properly monitoring CPU u
 
 ## Test #3 - Generate a high amount of web requests to your web machine servers and make sure that Kibana is picking them up.
 
+The first step is to generate some web requests through gitbash from our jumpbox to our web machines.  See gitbash terminal commands below.
+
+![Gitbash commands to generate web requests](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Bitbash%20Terminal%20HTTP%20Traffic%20Generation.PNG)
+
+Now we will will navogate to our Kibana Metrics Dashboard to determine of the ELKn Stack picked up a spike in http requests.  Yes, it did.  See below.
+
+
 
 These activities will guide you though generating some data to visualize in Kibana. Each of these activity will require the following high level steps:
 
