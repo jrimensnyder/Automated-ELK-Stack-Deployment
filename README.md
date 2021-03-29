@@ -256,11 +256,8 @@ The first step is to generate some web requests through gitbash from our jumpbox
 
 Now we will will navogate to our Kibana Metrics Dashboard to determine of the ELKn Stack picked up a spike in http requests.  Yes, it did.  See below.
 
+![Load Test Results](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Load%20Test%20for%20HTTP%20Traffic.PNG)
 
+## This ELK Stack and virtual cloud network are fully functional!
 
-These activities will guide you though generating some data to visualize in Kibana. Each of these activity will require the following high level steps:
-
-Use your jump-box to attack your web machines in various ways.
-Use a Linux utility to stress the system of a webVM directly.
-Subsequently generate traffic and logs that Kibana will collect.
-View that traffic in various ways inside Kibanna.
+## This concludes the Automatic Elk Stack Deployment.  Thanks and check back regularly for updates.
