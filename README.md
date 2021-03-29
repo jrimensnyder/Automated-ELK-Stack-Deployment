@@ -237,7 +237,11 @@ First, lets look at what our CPU usage over the past 15 minutes by the Metricbea
 
 Now, lets run a stress test on the Web-1 VM to see if the ELK stack monitors the spike in CPU usage.  We will use the gitbash terminal to execute the stress test.  See below screenshot of the gitbash commands.
 
-1[Gitbash Script of Stress Test]
+![Gitbash Script of Stress Test](https://github.com/jrimensnyder/Automated-ELK-Stack-Deployment/blob/main/IMAGES/Stress%20Test%20Bash%20Commands.PNG)
+
+Now that the stress test is running on Web-1, lets see what CPU usage the ELK Stack is reporting in Web-1.  See below image if the Kibana Dashboard.  Web-1 CPU usage jumped to 82% in less than one minute.
+
+![Web-1 during Stress Test](
 
 
 Generate a high amount of web requests to your pen-testing servers and make sure that Kibana is picking them up.
